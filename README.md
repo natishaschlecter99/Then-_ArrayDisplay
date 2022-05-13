@@ -1,0 +1,2 @@
+# Then-_ArrayDisplay
+$iLV_Left_Index = _GUIListViewEx_Init($cListView_Left, $aLV_List_Left_Replace, 1, 0x0000FF, False) ; ControlID/handle ; Reset all columns editable _GUIListViewEx_SetEditStatus($iLV_Left_Index, "*") ; UDF index Case $cDisplay_Left_Button $aLV_List_Left = _GUIListViewEx_ReturnArray($iLV_Left_Index) If Not @error Then _ArrayDisplay($aLV_List_Left, "Returned Left") Else MsgBox(0, "Left", "Empty Array") EndIf
